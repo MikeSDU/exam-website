@@ -1,0 +1,11 @@
+{
+  "name": "accounting-exam-lab",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Accounting exam practice with Render-hosted Gemini grading",
+  "engines": {"node": ">=22 <25"},
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --check dist/app.js && node tests/verify.cjs && node --test tests/server.test.cjs"
+  }
+}

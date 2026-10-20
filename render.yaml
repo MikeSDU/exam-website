@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: accounting-exam-lab
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: REQUEST_COOLDOWN_SECONDS
+        value: "60"
+      - key: DAILY_REQUEST_LIMIT
+        value: "20"
+      - key: MAX_QUEUE_LENGTH
+        value: "2"
+      - key: MAX_PROVIDER_RETRIES
+        value: "2"

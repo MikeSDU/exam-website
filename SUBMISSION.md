@@ -1,0 +1,13 @@
+# Assignment submission
+
+Website: [Insert your public Render URL after deployment]
+
+Source-code repository: [Insert the GitHub repository URL]
+
+## Added functionality and why it is useful
+
+Our main improvement is an explained practice assessment using the Danish seven-point grading scale. In the teacher's sampled practice screens, students can access exercises, timers, AI guidance or reference answers, but we did not observe a submitted-attempt grader. Our website lets students submit their own work and receive criterion-by-criterion marks, partial credit and a concrete next step, alongside an indicative practice grade. This addresses a specific self-study problem: seeing a model answer does not necessarily tell a student whether their alternative solution or partly correct reasoning is adequate. To make feedback more credible, the website checks SQL outputs on the supplied databases and numerical answers, including server-side verification for Gemini assessments, validates AI-returned criterion marks and calculates the grade in code. The percentage thresholds are clearly labelled as our own practice convention, not official Danish conversion rules or the teacher's marking scheme. AI feedback and a typed response cannot reproduce an examiner's oral assessment; the feature is intended to reveal weaknesses and guide further practice rather than promise a final exam grade. Its reliability still needs evaluation against teacher-marked sample answers before making stronger claims about grade accuracy.
+
+## Why the starting materials make this case more difficult
+
+Unlike a case centred on one photograph, a single dataset or one defined analytical task, this assignment starts with a heterogeneous collection of Excel files, delimited payroll files, relational databases and written instructions spanning several cases. Building a useful practice site therefore requires interpreting the original learning tasks, inspecting schemas and data granularity, selecting representative skills and deriving verifiable reference answers. For example, payroll data from two systems must be made comparable, ETL joins require appropriate keys, and restaurant regression questions require a reproducible model and cautious interpretation. These materials do not provide a ready-made web question bank or an official grading rubric, so turning them into practice assessments requires additional content and assessment design. The assignment also explicitly demands a persuasive improvement over an existing website after many generic feature ideas have already been rejected. This makes deciding what is worth building, and demonstrating its value and limitations, a substantial part of the work.

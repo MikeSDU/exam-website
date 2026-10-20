@@ -1,8 +1,8 @@
 # Assignment submission
 
-Website: [Insert your public Render URL after deployment]
+Website: https://exam-website-c05v.onrender.com/
 
-Source-code repository: [Insert the GitHub repository URL]
+Source-code repository: https://github.com/MikeSDU/exam-website
 
 ## Added functionality and why it is useful
 
